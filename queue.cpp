@@ -16,6 +16,9 @@ int main() {
   int queueCount = 0;
   // get all of the inputs
   while(cin >> problem){
+  	if(problem > 3 || problem < 1){
+  		continue;
+  	}
     if (problem == 1) {
       cin >> value;
       s1.push(value);
